@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.2
 // @description  It shows where you died at the last position and leader position (ABC' wasm hook don't work with idk why)
-// @author       FUCK YOU STUPID GAY
+// @author       MSTJK STOLE THIS A LONG LONG TIME AGO NIGGER
 // @match        https://diep.io/
 // @require      https://greasyfork.org/scripts/455550-wasm-parser/code/wasm%20parser.js?version=1123676
 // @require      https://greasyfork.org/scripts/433681-diepapi/code/diepAPI.js?version=1117485
