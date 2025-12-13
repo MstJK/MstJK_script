@@ -107,4 +107,12 @@ Basenumber는 대부분 해당 구조체 덩어리(플레이어 객체)의 시�
 /////////////ㅡ
 자 그래 내가 저렇게 하니까 지금 basenumb 이 뜨긴한다. 근데 e들어간 숫자가 한 100개정도 계속 안바뀜
 아 그니까 그 정제한걸 저장하고, 새로고침해서 메모리가 다시 들어왓을때도 다시한번 내가 up down 으로 fov값을 찾고, 또 다시 정재를 햇을때 아까 FOV값과의 offset차이의 오차가 적은것이 player 의 시작점일거다 그거지?
+ah, i get what you mean. i didn’t really know a proper way to directly obtain that value, so i’m trying to locate the fov address by using how it changes in-game, and then use that to find the start of the structure.
+this way, even if the address and offset change in the next update, i can recover the new values through the reverse process.
+What I meant by the basenumber was 6.315231789172653e-41; // the magic signature. That’s the value I’ve been researching how to find all this time.
+
+The approach I used before was to locate indices in the game’s memory. Because of WASM’s characteristics, those memory indices change slightly every time the game is refreshed. To solve that, I started looking for the static value you mentioned.
+
+From now on, I can search for that value using indexOf. Even if the game’s memory indices shift a bit on each refresh, I’ll still be able to reliably locate the same value every time.
+So whenever there’s an update, I’ll be able to go through that process again and automatically derive the new values and offsets on my own.
 
