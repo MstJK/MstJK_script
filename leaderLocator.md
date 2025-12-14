@@ -19,10 +19,12 @@ function updateLeaderValues() {
     }
 }
 
+4단계: 크로스-세션 검증 (필수)FOV 추적과 마찬가지로, 게임을 완전히 재시작하여 $\text{Index}{\text{Leader Base}}$를 다시 찾은 후 $\text{Offset}{\text{X}}$와 $\text{Offset}_{\text{Y}}$가 새로운 $\text{Leader X/Y}$ 주소를 정확히 가리키는지 확인해야 합니다.이 과정을 성공하면 당신은 FOV와 리더 좌표 두 개의 독립적인 구조체를 안정적으로 추적할 수 있는 기반을 마련하게 됩니다.
+
 <img width="712" height="745" alt="image" src="https://github.com/user-attachments/assets/f5e48e4b-0646-44e8-83bd-dc186eeaf572" />
 씁 씨발 고정값같은데
 
-
-4단계: 크로스-세션 검증 (필수)FOV 추적과 마찬가지로, 게임을 완전히 재시작하여 $\text{Index}{\text{Leader Base}}$를 다시 찾은 후 $\text{Offset}{\text{X}}$와 $\text{Offset}_{\text{Y}}$가 새로운 $\text{Leader X/Y}$ 주소를 정확히 가리키는지 확인해야 합니다.이 과정을 성공하면 당신은 FOV와 리더 좌표 두 개의 독립적인 구조체를 안정적으로 추적할 수 있는 기반을 마련하게 됩니다.
+ㅆㅂ 일단 샌드밗5ㅡ에서 했을때는 서버 새로고침 돌려도 계속 저 고정값으로 나오는
+아씨발고정값이다씨발
 
 
